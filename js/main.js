@@ -1,5 +1,45 @@
 (function ($) {
     "use strict";
+
+    /*-----------------------------
+Hero Banner Slider
+------------------------------*/
+
+    $('.hero-banner-slider').slick({
+        dots: true,
+        arrows: false,
+        autoplay: false,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+
+        ]
+    });
+
     /*-----------------------------
    Product Slider One Carousel
    ------------------------------*/

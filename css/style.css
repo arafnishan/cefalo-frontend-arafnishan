@@ -17,6 +17,10 @@ a:hover{
     color: #CC9900;
 }
 
+.bg-yellow-primary {
+    background: #CC9900;
+}
+
 /*======================Hero Slider=======================*/
 
 .single-hero-image {
@@ -368,11 +372,35 @@ a:hover{
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+    .product-banner-01-content {
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .product-banner-01-item-text {
+        position: static;
+        display: inline;
+        padding-left: 15px;
+    }
+    .product-banner-01-item-text h2 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
+    .product-banner-01-item-text a {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .product-banner-01-item-text p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
 }
 
-/*======================product-banner-01=======================*/
+/*======================product-banner-02=======================*/
 
 .single-product-banner-02 img {
     width: 100%;
@@ -501,4 +529,220 @@ a:hover{
     letter-spacing: 0.03em;
     color: #000000;
 }
+
+/*========= Header Area CSS==========*/
+.main-navigation {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    z-index: 9;
+}
+
+.logo-area img {
+    width: 63px;
+    padding-top: 13px;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+/*2.1 main menu*/
+.main-menu ul {
+    text-align: right
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+}
+
+.main-menu ul li a {
+    color: #111111;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 35px 0px;
+}
+
+
+.main-menu ul li a.current {
+    color: #CC9900;
+    font-weight: 500
+}
+
+.mean-container .mean-nav {
+    margin-top: 5px;
+    background: #ffffff;
+    border: none;
+}
+
+.main-menu ul li i {
+    margin-left: 5px
+}
+
+#mobile-menu {
+    display: block;
+}
+
+/*2.2 sticky menu*/
+.main-navigation.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    -webkit-animation: sticky 1s;
+    animation: sticky 1s;
+}
+
+@-webkit-keyframes sticky {
+    0% {
+        top: -120px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes sticky {
+    0% {
+        top: -120px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.search-input {
+    padding: 1rem 0 0.5rem 0;
+    height: 4.5rem;
+}
+
+.search-input input {
+    border: none;
+    border-bottom: 1px solid #CC9900;
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    color: #CC9900;
+}
+
+.search-input input:focus {
+    outline: none;
+}
+
+.search-input label {
+    position: absolute;
+    left: 0;
+    top: 1.625rem;
+    width: 100%;
+    color: #CC9900;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: normal;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.search-input input:focus ~ label {
+    top: 0;
+    font-size: 0.75rem;
+    color: #CC9900;
+}
+
+.search-input label.not-empty {
+    top: 0;
+    font-size: 0.75rem;
+}
+
+.search-input span:nth-of-type(3) {
+    position: absolute;
+    color: #CC9900;
+    left: 100%;
+    top: 1.625rem;
+    font-size: 1rem;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.search-input input:focus ~ span:nth-of-type(3) {
+    left: -1.625rem;
+    top: 1.625rem;
+    color: #CC9900;
+}
+
+.search-input span:nth-of-type(3).not-empty {
+    left: -1.625rem !important;
+    top: 1.625rem !important;
+}
+
+.search-input span:nth-of-type(4) {
+    position: absolute;
+    color: #CC9900;
+    right: 0;
+    top: 1.625rem;
+    font-size: 1rem;
+    opacity: 0;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.search-input input:focus ~ span:nth-of-type(4) {
+    color: #CC9900;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.search-input span:nth-of-type(4).not-empty {
+    opacity: 1 !important;
+}
+
+.search-input .bar {
+    display: block;
+    width: 0;
+    margin-left: 50%;
+    height: 1px;
+    background: #CC9900;
+    opacity: 0;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.search-input input:focus ~ .bar {
+    opacity: 1;
+    width: 100%;
+    margin-left: 0;
+}
+
+.notification-text {
+    left: 50%;
+    bottom: -30px;
+    font-size: 10px;
+    width: .9rem;
+    height: .9rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 

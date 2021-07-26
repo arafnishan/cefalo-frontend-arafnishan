@@ -17,10 +17,75 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/meanmenu.css"/>
     <link rel="stylesheet" href="css/tailwind.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+<!--=========== Main Header area ===============-->
+<header id="home">
+    <div class="main-navigation">
+        <div class="container">
+            <div class="row">
+                <!-- logo-area-->
+                <div class="col-xl-2 col-lg-3 col-md-3">
+                    <div class="logo-area">
+                        <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <!-- mainmenu-area-->
+                <div class="col-xl-10 col-lg-9 col-md-9">
+                    <div class="main-menu">
+                        <nav id="mobile-menu">
+                            <ul>
+                                <li>
+                                    <a class="current" href="index.html">home</a>
+                                </li>
+                                <li>
+                                    <a href="#">SHOP</a>
+                                </li>
+                                <li>
+                                    <a href="#">FEATURES</a>
+                                </li>
+                                <li>
+                                    <a href="#">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="#">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li class="text-left border-0">
+                                    <div class="search-input">
+                                        <input type="text">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Search here</label>
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </div>
+                                </li>
+                                <li class="hidden md:inline">
+                                    <div class="">
+                                        <div class="relative">
+                                            <span class="position-absolute left white-color bg-yellow-primary rounded-full notification-text text-center" style="">2</span>
+                                        </div>
+                                        <img src="img/cart.png" class="" alt="">
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <!-- mobile menu-->
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <!--++++++++++++++++++++Hero Slider++++++++++++++++++++++++++++-->
 <section class="hero-slider-area">
     <div class="">
@@ -72,7 +137,7 @@
     </div>
 </section>
 <section>
-    <div class="grid grid-cols-3 gap-0">
+    <div class="grid grid-cols-1 gap-0 md:grid-cols-3">
         <div class="">
             <!--++++++++++++++++++++ Product Slider 01 ++++++++++++++++++++++++++++-->
             <div class="product-slider-01-area">
@@ -154,7 +219,7 @@
     </div>
 </section>
 <section>
-    <div class="grid grid-cols-3 gap-0">
+    <div class="grid grid-cols-1 gap-0 md:grid-cols-3">
         <div class="col-span-2">
             <div class="single-product-banner-01">
                 <img src="img/product-slider-02/home07-img-block2-1.png" alt="" />
@@ -317,6 +382,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/meanmenu.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

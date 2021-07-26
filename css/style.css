@@ -77,7 +77,6 @@ a:hover{
     text-transform: uppercase;
     color: #fff;
     background-color: #CC9900;
-    border-radius: 4px;
 }
 
 
@@ -377,6 +376,7 @@ a:hover{
         display: block;
         width: 100%;
         height: auto;
+        padding-bottom: 10px;
     }
     .product-banner-01-item-text {
         position: static;
@@ -386,16 +386,19 @@ a:hover{
     .product-banner-01-item-text h2 {
         margin-left: 15px;
         margin-right: 15px;
+        margin-bottom: 15px;
     }
 
     .product-banner-01-item-text a {
         margin-left: 15px;
         margin-right: 15px;
+        margin-bottom: 10px;
     }
 
     .product-banner-01-item-text p {
         margin-left: 15px;
         margin-right: 15px;
+        margin-bottom: 10px;
     }
 
 }

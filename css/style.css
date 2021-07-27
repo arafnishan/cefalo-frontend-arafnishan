@@ -629,7 +629,7 @@ a:hover{
 
 .search-input {
     padding: 1rem 0 0.5rem 0;
-    height: 4.5rem;
+    width: 147px;
 }
 
 .search-input input {
@@ -747,6 +747,11 @@ a:hover{
     line-height: 1.9;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .search-input {
+        width:100%;
+    }
 }
 
 

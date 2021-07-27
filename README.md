@@ -1,4 +1,4 @@
-## This is an assignment from Cefalo
+## This is an assignment for the Frontend Developer position in Cefalo Bangladesh Ltd.
 
 ```
 Project can be viewed by opening the index.html file with any browser.

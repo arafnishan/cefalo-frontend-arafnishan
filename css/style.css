@@ -21,7 +21,7 @@ a:hover{
     background: #CC9900;
 }
 
-/*======================Hero Slider=======================*/
+/*====================== Hero Slider =======================*/
 
 .single-hero-image {
     position: relative;
@@ -184,7 +184,7 @@ a:hover{
 }
 
 
-/*======================product-slider-01=======================*/
+/*====================== product-slider-01 =======================*/
 .single-product-slider-01 img {
     width: 100%;
     height: 100%;
@@ -285,7 +285,7 @@ a:hover{
 
 /*<!--Product Slider 01 Ends-->*/
 
-/*======================product-banner-01=======================*/
+/*====================== product-banner-01 =======================*/
 
 .single-product-banner-01 img {
     width: 100%;
@@ -403,7 +403,7 @@ a:hover{
 
 }
 
-/*======================product-banner-02=======================*/
+/*====================== product-banner-02 =======================*/
 
 .single-product-banner-02 img {
     width: 100%;
@@ -522,17 +522,6 @@ a:hover{
 
 }
 
-/*footer*/
-.footer-text{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    margin-top: 26px;
-    letter-spacing: 0.03em;
-    color: #000000;
-}
-
 /*========= Header Area CSS==========*/
 .main-navigation {
     width: 100%;
@@ -548,7 +537,7 @@ a:hover{
     transition: .5s
 }
 
-/*2.1 main menu*/
+/* main menu */
 .main-menu ul {
     text-align: right
 }
@@ -590,7 +579,7 @@ a:hover{
     display: block;
 }
 
-/*2.2 sticky menu*/
+/* sticky menu*/
 .main-navigation.sticky {
     position: fixed;
     top: 0;
@@ -754,4 +743,14 @@ a:hover{
     }
 }
 
+/*========= Footer Area CSS==========*/
+.footer-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 26px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
 

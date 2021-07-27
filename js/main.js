@@ -134,7 +134,6 @@ Hero Banner Slider
                 .removeClass('not-empty');
         });
 
-        console.log('Hello from console!');
 
     });
 })(jQuery);
